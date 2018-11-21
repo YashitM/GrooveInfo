@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="../static/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="text-center">Groove Info</h3>
+        <div class="messaging">
+            <div class="inbox_msg">
+                <div class="mesgs">
+                    <div class="msg_history">
+                        {% for user, query, timestamp in queries %}
+                            {% if user == "user" %}
+                                <div class="outgoing_msg">
+                                    <div class="sent_msg">
+                                        <p>{{ query }}</p>
+                                        <span class="time_date">{{ timestamp }}</span>
+                                    </div>
+                                </div>
+                            {% elif user == "bot" %}
+                                <div class="incoming_msg">
+                                    <div class="incoming_msg_img">
+                                        <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                                    </div>
+                                    <div class="received_msg">
+                                        <div class="received_withd_msg">
+                                            <p>{{ query }}</p>
+                                            <span class="time_date">{{ timestamp }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="type_msg">
+                        <div class="input_msg_write">
+                            <form method="POST">
+                                <input type="text" id="user_msg" name="user_msg" class="write_msg" placeholder="Type a message" />
+                                <button class="msg_send_btn" type="submit"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
