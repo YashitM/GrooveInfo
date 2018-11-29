@@ -1,0 +1,882 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://webprotege.stanford.edu/project/JwpOBJx0CbVBVRa8DvxL3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://webprotege.stanford.edu/project/JwpOBJx0CbVBVRa8DvxL3">
+    <Prefix name="" IRI="http://webprotege.stanford.edu/project/JwpOBJx0CbVBVRa8DvxL3"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/R9NXeD7l38RjL8fkEHQb0pR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/RDEc1jOdrELiejEgo4D98Tc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://webprotege.stanford.edu/Rj44aBrXFuKWfiFv28y66g"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Band"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Festival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Individual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Fame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Label"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/SpotifyPlays"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/YoutubeViews"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAlbum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndividual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsInstrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasFame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFullName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNoOfIndividuals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYearOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYearOfRelease"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasPayout"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasReleaseDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aftermath"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drums"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#English"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greatest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guitar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kamikaze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maroon5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OneDirection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OneThing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunburn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vocals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WithoutMe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Pop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Rap"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R9NXeD7l38RjL8fkEHQb0pR"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/RDEc1jOdrELiejEgo4D98Tc"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Band"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Festival"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Individual"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrument"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+        <Class IRI="#Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Label"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/SpotifyPlays"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Fame"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/YoutubeViews"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Fame"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://webprotege.stanford.edu/RDEc1jOdrELiejEgo4D98Tc"/>
+        <Class IRI="#Instrument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Band"/>
+        <Class IRI="#Individual"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Festival"/>
+        <Class IRI="#Instrument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Individual"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/SpotifyPlays"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/YoutubeViews"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Label"/>
+        <NamedIndividual IRI="#Aftermath"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/RDEc1jOdrELiejEgo4D98Tc"/>
+        <NamedIndividual IRI="#America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Instrument"/>
+        <NamedIndividual IRI="#Drums"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/R9NXeD7l38RjL8fkEHQb0pR"/>
+        <NamedIndividual IRI="#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+        <NamedIndividual IRI="#Female"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+        <NamedIndividual IRI="#Greatest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Instrument"/>
+        <NamedIndividual IRI="#Guitar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+        <NamedIndividual IRI="#Kamikaze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Instrument"/>
+        <NamedIndividual IRI="#Keyboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+        <NamedIndividual IRI="#Male"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Band"/>
+        <NamedIndividual IRI="#Maroon5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Band"/>
+        <NamedIndividual IRI="#OneDirection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+        <NamedIndividual IRI="#OneThing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Festival"/>
+        <NamedIndividual IRI="#Sunburn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Instrument"/>
+        <NamedIndividual IRI="#Vocals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Individual"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Individual"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/Rj44aBrXFuKWfiFv28y66g"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Pop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/Rj44aBrXFuKWfiFv28y66g"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Rap"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Female"/>
+        <NamedIndividual IRI="#Male"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Maroon5"/>
+        <NamedIndividual IRI="#OneDirection"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Pop"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Rap"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <NamedIndividual IRI="#America"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasGenre"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Rap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <NamedIndividual IRI="#Aftermath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <NamedIndividual IRI="#Kamikaze"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel"/>
+        <NamedIndividual IRI="#Kamikaze"/>
+        <NamedIndividual IRI="#Aftermath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <NamedIndividual IRI="#Kamikaze"/>
+        <NamedIndividual IRI="#Greatest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <NamedIndividual IRI="#OneDirection"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <NamedIndividual IRI="#OneDirection"/>
+        <NamedIndividual IRI="#OneThing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <NamedIndividual IRI="#OneThing"/>
+        <NamedIndividual IRI="#OneDirection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <NamedIndividual IRI="#OneThing"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Sunburn"/>
+        <NamedIndividual IRI="#America"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <NamedIndividual IRI="#America"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasGenre"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <NamedIndividual IRI="#Kamikaze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsInstrument"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <NamedIndividual IRI="#Drums"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsInstrument"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <NamedIndividual IRI="#Keyboard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsInstrument"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <NamedIndividual IRI="#Vocals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <NamedIndividual IRI="#Greatest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsInstrument"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
+        <NamedIndividual IRI="#Guitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsInstrument"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
+        <NamedIndividual IRI="#Vocals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">226</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLink"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <Literal>https://open.spotify.com/track/2XTquzYQAdT1Hk78bOUwsv</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasReleaseDate"/>
+        <NamedIndividual IRI="#Greatest"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+        <NamedIndividual IRI="#Sunburn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">201</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLink"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <Literal>https://open.spotify.com/track/5p7ujcrUXASCNwRaWNHR1C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasPayout"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">680000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasReleaseDate"/>
+        <NamedIndividual IRI="#WithoutMe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">2018</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFullName"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <Literal>Marshall Bruce Mathers III</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearOfBirth"/>
+        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1972</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBand"/>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasFame"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasGenre"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBand"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBand"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGender"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playsInstrument"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasFame"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasFame"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasGenre"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBand"/>
+        <Class IRI="#Band"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGender"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <Class IRI="#Individual"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class IRI="http://webprotege.stanford.edu/RDEc1jOdrELiejEgo4D98Tc"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playsInstrument"/>
+        <Class IRI="#Instrument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasFame"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Fame"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasGenre"/>
+        <Class IRI="http://webprotege.stanford.edu/Rj44aBrXFuKWfiFv28y66g"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Label"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <Class IRI="http://webprotege.stanford.edu/R9NXeD7l38RjL8fkEHQb0pR"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLink"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasPayout"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasReleaseDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFullName"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNoOfIndividuals"/>
+        <Class IRI="#Band"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYearOfBirth"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYearOfRelease"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLink"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasPayout"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasReleaseDate"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFullName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNoOfIndividuals"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYearOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYearOfRelease"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLink"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasPayout"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasReleaseDate"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD</IRI>
+        <Literal>Artist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/R9NXeD7l38RjL8fkEHQb0pR</IRI>
+        <Literal>Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/RDEc1jOdrELiejEgo4D98Tc</IRI>
+        <Literal>Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://webprotege.stanford.edu/Rj44aBrXFuKWfiFv28y66g</IRI>
+        <Literal>Genre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Album</IRI>
+        <Literal>Album</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Fame</IRI>
+        <Literal>Fame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Gender</IRI>
+        <Literal>Gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Label</IRI>
+        <Literal>Label</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Pop</IRI>
+        <Literal>Pop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Rap</IRI>
+        <Literal>Rap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Song</IRI>
+        <Literal>Song</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/SpotifyPlays</IRI>
+        <Literal>SpotifyPlays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/YoutubeViews</IRI>
+        <Literal>YoutubeViews</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist</IRI>
+        <Literal>hasArtist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasFame</IRI>
+        <Literal>hasFame</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasGenre</IRI>
+        <Literal>hasGenre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasLabel</IRI>
+        <Literal>hasLabel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage</IRI>
+        <Literal>hasLanguage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasLink</IRI>
+        <Literal>hasLink</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasPayout</IRI>
+        <Literal>hasPayout</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasReleaseDate</IRI>
+        <Literal>hasReleaseDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/hasSong</IRI>
+        <Literal>hasSong</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
