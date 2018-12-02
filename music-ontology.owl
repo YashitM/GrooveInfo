@@ -25,6 +25,15 @@
         <Class IRI="http://webprotege.stanford.edu/Rj44aBrXFuKWfiFv28y66g"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Band"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Festival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Individual"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Instrument"/>
     </Declaration>
     <Declaration>
@@ -52,7 +61,13 @@
         <ObjectProperty IRI="#hasAlbum"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasBand"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndividual"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasRegion"/>
@@ -82,7 +97,13 @@
         <DataProperty IRI="#hasFullName"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasNoOfIndividuals"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasYearOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYearOfRelease"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
@@ -127,6 +148,18 @@
         <NamedIndividual IRI="#Male"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Maroon5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OneDirection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OneThing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunburn"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Vocals"/>
     </Declaration>
     <Declaration>
@@ -153,6 +186,18 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Band"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Festival"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Individual"/>
+        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Instrument"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
@@ -162,7 +207,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
-        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+        <Class IRI="#Individual"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Label"/>
@@ -180,6 +225,26 @@
         <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/YoutubeViews"/>
         <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Fame"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://webprotege.stanford.edu/RDEc1jOdrELiejEgo4D98Tc"/>
+        <Class IRI="#Instrument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Band"/>
+        <Class IRI="#Individual"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Festival"/>
+        <Class IRI="#Instrument"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Individual"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/SpotifyPlays"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/YoutubeViews"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Label"/>
         <NamedIndividual IRI="#Aftermath"/>
@@ -221,6 +286,22 @@
         <NamedIndividual IRI="#Male"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Band"/>
+        <NamedIndividual IRI="#Maroon5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Band"/>
+        <NamedIndividual IRI="#OneDirection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+        <NamedIndividual IRI="#OneThing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Festival"/>
+        <NamedIndividual IRI="#Sunburn"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Instrument"/>
         <NamedIndividual IRI="#Vocals"/>
     </ClassAssertion>
@@ -229,11 +310,11 @@
         <NamedIndividual IRI="#WithoutMe"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+        <Class IRI="#Individual"/>
         <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+        <Class IRI="#Individual"/>
         <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -249,7 +330,10 @@
         <NamedIndividual IRI="#Male"/>
     </DifferentIndividuals>
     <DifferentIndividuals>
-        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
+        <NamedIndividual IRI="#Maroon5"/>
+        <NamedIndividual IRI="#OneDirection"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
         <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
     </DifferentIndividuals>
     <DifferentIndividuals>
@@ -295,6 +379,31 @@
         <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
         <NamedIndividual IRI="#Kamikaze"/>
         <NamedIndividual IRI="#Greatest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <NamedIndividual IRI="#OneDirection"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
+        <NamedIndividual IRI="#OneDirection"/>
+        <NamedIndividual IRI="#OneThing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+        <NamedIndividual IRI="#OneThing"/>
+        <NamedIndividual IRI="#OneDirection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasLanguage"/>
+        <NamedIndividual IRI="#OneThing"/>
+        <NamedIndividual IRI="#English"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Sunburn"/>
+        <NamedIndividual IRI="#America"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRegion"/>
@@ -345,11 +454,6 @@
         <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasSong"/>
         <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
         <NamedIndividual IRI="#Greatest"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGender"/>
-        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
-        <NamedIndividual IRI="#Female"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#playsInstrument"/>
@@ -383,6 +487,11 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
+        <NamedIndividual IRI="#Sunburn"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
         <NamedIndividual IRI="#WithoutMe"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">201</Literal>
     </DataPropertyAssertion>
@@ -411,19 +520,17 @@
         <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Eminem"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1972</Literal>
     </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasFullName"/>
-        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
-        <Literal>Ashley Nicolette Frangipane</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasYearOfBirth"/>
-        <NamedIndividual IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Halsey"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#positiveInteger">1994</Literal>
-    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasAlbum"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBand"/>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasArtist"/>
@@ -462,8 +569,24 @@
         <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBand"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBand"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGender"/>
         <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRegion"/>
@@ -516,6 +639,18 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAlbum"/>
         <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Album"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBand"/>
+        <Class IRI="#Band"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGender"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Gender"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndividual"/>
+        <Class IRI="#Individual"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasRegion"/>
@@ -570,8 +705,16 @@
         <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasNoOfIndividuals"/>
+        <Class IRI="#Band"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasYearOfBirth"/>
         <Class IRI="http://webprotege.stanford.edu/R8xmDV1DFDEltcLopanMtaD"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYearOfRelease"/>
+        <Class IRI="http://www.iiitd.ac.in/monsoon2018/om/music/Song"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.iiitd.ac.in/monsoon2018/om/music/hasDuration"/>
@@ -594,7 +737,15 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#hasNoOfIndividuals"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasYearOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYearOfRelease"/>
         <Datatype abbreviatedIRI="xsd:positiveInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -640,11 +791,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Eminem</IRI>
-        <Literal>Eminem</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Fame</IRI>
         <Literal>Fame</Literal>
     </AnnotationAssertion>
@@ -652,11 +798,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Gender</IRI>
         <Literal>Gender</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.iiitd.ac.in/monsoon2018/om/music/Halsey</IRI>
-        <Literal>Halsey</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
