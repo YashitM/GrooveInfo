@@ -1,0 +1,273 @@
+Prefix(:=<http://www.semanticweb.org/nirmita/ontologies/2018/11/untitled-ontology-14#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/nirmita/ontologies/2018/11/untitled-ontology-14>
+
+Declaration(Class(:Albums))
+Declaration(Class(:Artist))
+Declaration(Class(:Band))
+Declaration(Class(:Female))
+Declaration(Class(:Gender))
+Declaration(Class(:Genre))
+Declaration(Class(:Instrumental))
+Declaration(Class(:Language))
+Declaration(Class(:Male))
+Declaration(Class(:Mood))
+Declaration(Class(:Pitch))
+Declaration(Class(:Playlist))
+Declaration(Class(:Region))
+Declaration(Class(:Solo))
+Declaration(Class(:Songs))
+Declaration(Class(:Spotify))
+Declaration(Class(:Youtube))
+Declaration(ObjectProperty(:accessedThrough))
+Declaration(ObjectProperty(:fromAlbum))
+Declaration(ObjectProperty(:hasGenre))
+Declaration(ObjectProperty(:hasInstruments))
+Declaration(ObjectProperty(:hasLanguage))
+Declaration(ObjectProperty(:hasMood))
+Declaration(ObjectProperty(:ofBand))
+Declaration(ObjectProperty(:ofIndiviadual))
+Declaration(ObjectProperty(:performedBy))
+Declaration(ObjectProperty(:performedIn))
+Declaration(ObjectProperty(:realizedBy))
+Declaration(ObjectProperty(:resultIn))
+Declaration(DataProperty(:hasGender))
+Declaration(DataProperty(:hasName))
+Declaration(DataProperty(:hasNoOfIndividuals))
+Declaration(DataProperty(:hasPitch))
+Declaration(NamedIndividual(:Adele))
+Declaration(NamedIndividual(:American))
+Declaration(NamedIndividual(:DemiLovato))
+Declaration(NamedIndividual(:Drums))
+Declaration(NamedIndividual(:English))
+Declaration(NamedIndividual(:Guitar))
+Declaration(NamedIndividual(:Maroon5))
+Declaration(NamedIndividual(:MetalPlaylist))
+Declaration(NamedIndividual(:OneDirection))
+Declaration(NamedIndividual(:OneThing))
+Declaration(NamedIndividual(:Spanish))
+Declaration(NamedIndividual(:Vaaqif))
+Declaration(NamedIndividual(:calm))
+Declaration(NamedIndividual(:country))
+Declaration(NamedIndividual(:energetic))
+Declaration(NamedIndividual(:female))
+Declaration(NamedIndividual(:four))
+Declaration(NamedIndividual(:happy))
+Declaration(NamedIndividual(:male))
+Declaration(NamedIndividual(:pop))
+Declaration(NamedIndividual(:sad))
+############################
+#   Object Properties
+############################
+
+# Object Property: :accessedThrough (:accessedThrough)
+
+ObjectPropertyDomain(:accessedThrough :Songs)
+ObjectPropertyRange(:accessedThrough :Playlist)
+
+# Object Property: :hasGenre (:hasGenre)
+
+SubObjectPropertyOf(:hasGenre :realizedBy)
+ObjectPropertyDomain(:hasGenre :Songs)
+ObjectPropertyRange(:hasGenre :Genre)
+
+# Object Property: :hasInstruments (:hasInstruments)
+
+SubObjectPropertyOf(:hasInstruments :realizedBy)
+ObjectPropertyDomain(:hasInstruments :Songs)
+ObjectPropertyRange(:hasInstruments :Instrumental)
+
+# Object Property: :hasLanguage (:hasLanguage)
+
+SubObjectPropertyOf(:hasLanguage :realizedBy)
+ObjectPropertyDomain(:hasLanguage :Songs)
+ObjectPropertyRange(:hasLanguage :Language)
+
+# Object Property: :hasMood (:hasMood)
+
+SubObjectPropertyOf(:hasMood :resultIn)
+ObjectPropertyDomain(:hasMood :Songs)
+
+# Object Property: :ofBand (:ofBand)
+
+ObjectPropertyDomain(:ofBand :Songs)
+ObjectPropertyRange(:ofBand :Band)
+
+# Object Property: :ofIndiviadual (:ofIndiviadual)
+
+ObjectPropertyDomain(:ofIndiviadual :Songs)
+ObjectPropertyRange(:ofIndiviadual :Solo)
+
+# Object Property: :performedBy (:performedBy)
+
+ObjectPropertyDomain(:performedBy :Songs)
+ObjectPropertyRange(:performedBy :Artist)
+
+# Object Property: :performedIn (:performedIn)
+
+ObjectPropertyDomain(:performedIn :Songs)
+ObjectPropertyRange(:performedIn :Region)
+
+# Object Property: :realizedBy (:realizedBy)
+
+ObjectPropertyDomain(:realizedBy :Songs)
+ObjectPropertyRange(:realizedBy :Genre)
+ObjectPropertyRange(:realizedBy :Instrumental)
+ObjectPropertyRange(:realizedBy :Language)
+ObjectPropertyRange(:realizedBy :Pitch)
+
+# Object Property: :resultIn (:resultIn)
+
+ObjectPropertyDomain(:resultIn :Songs)
+ObjectPropertyRange(:resultIn :Mood)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasGender (:hasGender)
+
+DataPropertyDomain(:hasGender :Solo)
+DataPropertyRange(:hasGender xsd:string)
+
+# Data Property: :hasName (:hasName)
+
+DataPropertyDomain(:hasName :Artist)
+DataPropertyRange(:hasName xsd:string)
+
+# Data Property: :hasNoOfIndividuals (:hasNoOfIndividuals)
+
+DataPropertyDomain(:hasNoOfIndividuals :Band)
+DataPropertyRange(:hasNoOfIndividuals xsd:positiveInteger)
+
+# Data Property: :hasPitch (:hasPitch)
+
+DataPropertyDomain(:hasPitch :Songs)
+DataPropertyRange(:hasPitch xsd:positiveInteger)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :Band (:Band)
+
+SubClassOf(:Band :Artist)
+
+# Class: :Female (:Female)
+
+SubClassOf(:Female :Gender)
+
+# Class: :Gender (:Gender)
+
+SubClassOf(:Gender :Solo)
+
+# Class: :Male (:Male)
+
+SubClassOf(:Male :Gender)
+
+# Class: :Solo (:Solo)
+
+SubClassOf(:Solo :Artist)
+
+# Class: :Spotify (:Spotify)
+
+SubClassOf(:Spotify :Playlist)
+
+# Class: :Youtube (:Youtube)
+
+SubClassOf(:Youtube :Playlist)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Adele (:Adele)
+
+ClassAssertion(:Female :Adele)
+ClassAssertion(:Solo :Adele)
+
+# Individual: :American (:American)
+
+ClassAssertion(:Region :American)
+
+# Individual: :DemiLovato (:DemiLovato)
+
+ClassAssertion(:Female :DemiLovato)
+ClassAssertion(:Solo :DemiLovato)
+
+# Individual: :Drums (:Drums)
+
+ClassAssertion(:Instrumental :Drums)
+
+# Individual: :English (:English)
+
+ClassAssertion(:Language :English)
+
+# Individual: :Guitar (:Guitar)
+
+ClassAssertion(:Instrumental :Guitar)
+
+# Individual: :Maroon5 (:Maroon5)
+
+ClassAssertion(:Band :Maroon5)
+
+# Individual: :MetalPlaylist (:MetalPlaylist)
+
+ClassAssertion(:Spotify :MetalPlaylist)
+
+# Individual: :OneDirection (:OneDirection)
+
+ClassAssertion(:Band :OneDirection)
+
+# Individual: :OneThing (:OneThing)
+
+ClassAssertion(:Songs :OneThing)
+
+# Individual: :Spanish (:Spanish)
+
+ClassAssertion(:Language :Spanish)
+
+# Individual: :Vaaqif (:Vaaqif)
+
+ClassAssertion(:Albums :Vaaqif)
+
+# Individual: :calm (:calm)
+
+ClassAssertion(:Mood :calm)
+
+# Individual: :country (:country)
+
+ClassAssertion(:Genre :country)
+
+# Individual: :energetic (:energetic)
+
+ClassAssertion(:Mood :energetic)
+
+# Individual: :four (:four)
+
+ClassAssertion(:Albums :four)
+
+# Individual: :happy (:happy)
+
+ClassAssertion(:Mood :happy)
+
+# Individual: :pop (:pop)
+
+ClassAssertion(:Genre :pop)
+
+# Individual: :sad (:sad)
+
+ClassAssertion(:Mood :sad)
+
+
+)
