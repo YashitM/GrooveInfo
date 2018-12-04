@@ -1,0 +1,256 @@
+Prefix(:=<http://www.iiitd.ac.in/monsoon2018/om/cookingrecipe/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.iiitd.ac.in/monsoon2018/om/cookingrecipe/>
+
+Declaration(Class(:AndhraCuisine))
+Declaration(Class(:ChineseCuisine))
+Declaration(Class(:ContinentalCuisine))
+Declaration(Class(:CuisineType))
+Declaration(Class(:Dish))
+Declaration(Class(:EastIndianCuisine))
+Declaration(Class(:Flavor))
+Declaration(Class(:HighCarb))
+Declaration(Class(:HighProtein))
+Declaration(Class(:IndianCuisine))
+Declaration(Class(:Ingredients))
+Declaration(Class(:IngredientsList))
+Declaration(Class(:KeralaCuisine))
+Declaration(Class(:NorthIndianCuisine))
+Declaration(Class(:NutritionalValue))
+Declaration(Class(:Quantity))
+Declaration(Class(:Recipe))
+Declaration(Class(:SouthIndianCuisine))
+Declaration(Class(:Utensils))
+Declaration(Class(:WestIndianCuisine))
+Declaration(ObjectProperty(:hasCookingUtensils))
+Declaration(ObjectProperty(:hasCuisineType))
+Declaration(ObjectProperty(:hasFirstIngredient))
+Declaration(ObjectProperty(:hasFlavor))
+Declaration(ObjectProperty(:hasIngredients))
+Declaration(ObjectProperty(:hasLastIngredient))
+Declaration(ObjectProperty(:hasNextIngredient))
+Declaration(ObjectProperty(:hasNutritionalValue))
+Declaration(ObjectProperty(:hasQuantity))
+Declaration(ObjectProperty(:hasRecipe))
+Declaration(DataProperty(:hasNumericValue))
+Declaration(DataProperty(:hasServingSize))
+Declaration(DataProperty(:hasUnit))
+Declaration(NamedIndividual(:biryani))
+Declaration(NamedIndividual(:bitter))
+Declaration(NamedIndividual(:boondi))
+Declaration(NamedIndividual(:boondiRaitaIngredients))
+Declaration(NamedIndividual(:cake))
+Declaration(NamedIndividual(:cakeRecipe))
+Declaration(NamedIndividual(:curd))
+Declaration(NamedIndividual(:paratha))
+Declaration(NamedIndividual(:pulao))
+Declaration(NamedIndividual(:sour))
+Declaration(NamedIndividual(:spicy))
+Declaration(NamedIndividual(:sweet))
+Declaration(NamedIndividual(:tadka))
+Declaration(NamedIndividual(:tangy))
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasCookingUtensils (:hasCookingUtensils)
+
+ObjectPropertyDomain(:hasCookingUtensils :Recipe)
+ObjectPropertyRange(:hasCookingUtensils :Utensils)
+
+# Object Property: :hasCuisineType (:hasCuisineType)
+
+ObjectPropertyDomain(:hasCuisineType :Dish)
+ObjectPropertyRange(:hasCuisineType :CuisineType)
+
+# Object Property: :hasFirstIngredient (:hasFirstIngredient)
+
+ObjectPropertyDomain(:hasFirstIngredient :IngredientsList)
+ObjectPropertyRange(:hasFirstIngredient :Ingredients)
+
+# Object Property: :hasFlavor (:hasFlavor)
+
+ObjectPropertyDomain(:hasFlavor :Dish)
+ObjectPropertyRange(:hasFlavor :Flavor)
+
+# Object Property: :hasIngredients (:hasIngredients)
+
+ObjectPropertyDomain(:hasIngredients :Recipe)
+ObjectPropertyRange(:hasIngredients :Ingredients)
+ObjectPropertyRange(:hasIngredients ObjectMinCardinality(1 :hasIngredients :Ingredients))
+
+# Object Property: :hasLastIngredient (:hasLastIngredient)
+
+ObjectPropertyDomain(:hasLastIngredient :IngredientsList)
+ObjectPropertyRange(:hasLastIngredient :Ingredients)
+
+# Object Property: :hasNextIngredient (:hasNextIngredient)
+
+ObjectPropertyDomain(:hasNextIngredient :Ingredients)
+ObjectPropertyRange(:hasNextIngredient :Ingredients)
+
+# Object Property: :hasQuantity (:hasQuantity)
+
+ObjectPropertyDomain(:hasQuantity :Ingredients)
+ObjectPropertyDomain(:hasQuantity :NutritionalValue)
+ObjectPropertyRange(:hasQuantity :Quantity)
+
+# Object Property: :hasRecipe (:hasRecipe)
+
+ObjectPropertyDomain(:hasRecipe :Dish)
+ObjectPropertyRange(:hasRecipe :Recipe)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasNumericValue (:hasNumericValue)
+
+DataPropertyDomain(:hasNumericValue :Quantity)
+DataPropertyRange(:hasNumericValue xsd:nonNegativeInteger)
+
+# Data Property: :hasServingSize (:hasServingSize)
+
+DataPropertyDomain(:hasServingSize :Dish)
+DataPropertyRange(:hasServingSize xsd:positiveInteger)
+
+# Data Property: :hasUnit (:hasUnit)
+
+DataPropertyDomain(:hasUnit :Quantity)
+DataPropertyRange(:hasUnit xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :AndhraCuisine (:AndhraCuisine)
+
+SubClassOf(:AndhraCuisine :SouthIndianCuisine)
+DisjointClasses(:AndhraCuisine :KeralaCuisine)
+
+# Class: :ChineseCuisine (:ChineseCuisine)
+
+SubClassOf(:ChineseCuisine :CuisineType)
+
+# Class: :ContinentalCuisine (:ContinentalCuisine)
+
+SubClassOf(:ContinentalCuisine :CuisineType)
+
+# Class: :Dish (:Dish)
+
+SubClassOf(:Dish ObjectSomeValuesFrom(:hasCuisineType :CuisineType))
+SubClassOf(:Dish ObjectSomeValuesFrom(:hasFlavor :Flavor))
+SubClassOf(:Dish ObjectSomeValuesFrom(:hasNutritionalValue :NutritionalValue))
+
+# Class: :EastIndianCuisine (:EastIndianCuisine)
+
+SubClassOf(:EastIndianCuisine :IndianCuisine)
+
+# Class: :Flavor (:Flavor)
+
+EquivalentClasses(:Flavor ObjectOneOf(:sour :spicy :sweet :tangy))
+
+# Class: :HighCarb (:HighCarb)
+
+SubClassOf(:HighCarb :NutritionalValue)
+
+# Class: :HighProtein (:HighProtein)
+
+SubClassOf(:HighProtein :NutritionalValue)
+
+# Class: :IndianCuisine (:IndianCuisine)
+
+SubClassOf(:IndianCuisine :CuisineType)
+
+# Class: :KeralaCuisine (:KeralaCuisine)
+
+SubClassOf(:KeralaCuisine :SouthIndianCuisine)
+
+# Class: :NorthIndianCuisine (:NorthIndianCuisine)
+
+SubClassOf(:NorthIndianCuisine :IndianCuisine)
+
+# Class: :Recipe (:Recipe)
+
+SubClassOf(:Recipe ObjectSomeValuesFrom(:hasCookingUtensils :Utensils))
+SubClassOf(:Recipe ObjectSomeValuesFrom(:hasIngredients :Ingredients))
+SubClassOf(:Recipe ObjectSomeValuesFrom(:hasQuantity :Quantity))
+
+# Class: :SouthIndianCuisine (:SouthIndianCuisine)
+
+SubClassOf(:SouthIndianCuisine :IndianCuisine)
+
+# Class: :WestIndianCuisine (:WestIndianCuisine)
+
+SubClassOf(:WestIndianCuisine :IndianCuisine)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :biryani (:biryani)
+
+ClassAssertion(:AndhraCuisine :biryani)
+
+# Individual: :bitter (:bitter)
+
+ClassAssertion(:Flavor :bitter)
+
+# Individual: :boondi (:boondi)
+
+ClassAssertion(:Ingredients :boondi)
+ObjectPropertyAssertion(:hasNextIngredient :boondi :curd)
+
+# Individual: :boondiRaitaIngredients (:boondiRaitaIngredients)
+
+ClassAssertion(:IngredientsList :boondiRaitaIngredients)
+ObjectPropertyAssertion(:hasFirstIngredient :boondiRaitaIngredients :boondi)
+ObjectPropertyAssertion(:hasLastIngredient :boondiRaitaIngredients :tadka)
+
+# Individual: :cake (:cake)
+
+ObjectPropertyAssertion(:hasRecipe :cake :cakeRecipe)
+
+# Individual: :curd (:curd)
+
+ClassAssertion(:Ingredients :curd)
+ObjectPropertyAssertion(:hasNextIngredient :curd :tadka)
+
+# Individual: :paratha (:paratha)
+
+ClassAssertion(:IndianCuisine :paratha)
+
+# Individual: :pulao (:pulao)
+
+ClassAssertion(:IndianCuisine :pulao)
+
+# Individual: :sour (:sour)
+
+
+# Individual: :spicy (:spicy)
+
+
+# Individual: :sweet (:sweet)
+
+
+# Individual: :tadka (:tadka)
+
+ClassAssertion(:Ingredients :tadka)
+
+# Individual: :tangy (:tangy)
+
+
+
+DifferentIndividuals(:paratha :pulao)
+DifferentIndividuals(:sour :spicy :sweet :tangy)
+)
