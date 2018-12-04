@@ -1,14 +1,19 @@
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Set;
 import java.util.stream.Stream;
 
 import org.semanticweb.HermiT.Configuration;
 import org.semanticweb.HermiT.Reasoner;
 import org.semanticweb.HermiT.ReasonerFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.expression.OWLEntityChecker;
+import org.semanticweb.owlapi.expression.ShortFormEntityChecker;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.util.BidirectionalShortFormProviderAdapter;
+import org.semanticweb.owlapi.util.SimpleShortFormProvider;
+import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
 
 public class OWLReasoning {
 
@@ -70,12 +75,16 @@ public class OWLReasoning {
         return classes;
     }
 
-//    public static ArrayList<String> checkCharacteristics(String ontFilePath, String classItem) {
-//        loadOntologyReasoner(ontFilePath);
+//    public static ArrayList<String> getExplanation(String ontFilePath, String classItem) {
+//        loadConsistencyOntologyReader(ontFilePath);
 //        ArrayList<String> classes = new ArrayList<>();
-//        OWLObjectProperty oc = dataFactory.getOWLObjectProperty(IRI.create(baseIRI + classItem));
-//        Stream<OWLObjectPropertyExpression> subProperties = reasoner.(oc).entities();
-//        subProperties.forEach(cl -> classes.add(cl.getNamedProperty().toString().replace(baseIRI,"").replace("<","").replace(">","")));
+//        BlackBoxExplanation explanation =
+//                new BlackBoxExplanation(ontology, reasonerFactoryCon, reasonerCon);
+//        HSTExplanationGenerator multiExplanator = new HSTExplanationGenerator(explanation);
+////        OWLClass ac = dataFactoryCon.getOWLClass(IRI.create(baseIRI + classItem));
+//        OWLAxiom axiom = new OWLAxiom("asdf");
+//        Set<OWLAxiom> axioms = multiExplanator.getExplanation(ac);
+//        axioms.forEach(ax -> classes.add(String.valueOf(ax)));
 //        return classes;
 //    }
 
@@ -118,6 +127,20 @@ public class OWLReasoning {
         // created in ReasonerSample1
         reasonerCon = reasonerFactoryCon.createReasoner(ontology, configuration);
         dataFactoryCon = manager.getOWLDataFactory();
+    }
+
+    public static void add(String ontFilePath, String classItem) {
+        loadOntologyReasoner(ontFilePath);
+        Set<OWLOntology> importsClosure = ontology.getImportsClosure();
+        OWLEntityChecker entityChecker = new ShortFormEntityChecker(
+                new BidirectionalShortFormProviderAdapter(manager, importsClosure,
+                        new SimpleShortFormProvider()));
+        ManchesterOWLSyntaxParser parser = OWLManager.createManchesterParser();
+        parser.setDefaultOntology(ontology);
+        parser.setOWLEntityChecker(entityChecker);
+        parser.setStringToParse(classItem);
+        OWLAxiom axiom = parser.parseAxiom();
+        manager.addAxiom(ontology, axiom);
     }
 
     public static boolean checkConsistency(String ontFilePath) {
@@ -185,6 +208,12 @@ public class OWLReasoning {
                 output += "Inconsistent";
             }
             return output;
+        } else if (query.contains("Add:")) {
+            String[] classes = query.split("Add: ");
+            System.out.println(classes[1]);
+            add(ontPath, classes[1]);
+            String output = "Axiom: " + classes[1] + " executed";
+            return output;
         } else if (query.contains("GetTypes")) {
             String[] classes = query.split("GetTypes ");
             ArrayList<String> types = checkInstanceMembership(ontPath, classes[1]);
@@ -229,11 +258,12 @@ public class OWLReasoning {
 //        String query = "Vaaqif InstanceOf ?";
 //        String query = "OneThing InstanceOf Songs";
 //        String query = "IsConsistent?";
+//        String query = "Add: Song and (fromAlbum some {UpAllNight})";
 //        String query = "GetTypes OneDirection";
 //        String query = "? SubPropertyOf realizedBy";
 //        String query = "hasGenre SubPropertyOf ?";
-//        String query = "hasGenre SubPropertyOf realizedBy";
-        String query = "CharacteristicsOf realizedBy";
+        String query = "hasGenre SubPropertyOf realizedBy";
+//        String query = "CharacteristicsOf realizedBy";
         System.out.println(parseQuery(query, ontFilePath));
     }
 }
